@@ -14,6 +14,12 @@ const SocialButton = () => {
       {BLOG.CONTACT_TWITTER && <a target='_blank' rel='noreferrer' title={'twitter'} href={BLOG.CONTACT_TWITTER} >
         <i className='fab fa-twitter transform hover:scale-125 duration-150 hover:text-green-600'/>
       </a>}
+      {BLOG.CONTACT_MASTODON && <a target='_blank' rel='noreferrer' title={'mastoton'} href={BLOG.CONTACT_MASTODON} >
+        <i className='fab fa-mastodon transform hover:scale-125 duration-150 hover:text-green-600'/>
+      </a>}
+      {BLOG.CONTACT_LINKS && <a target='_blank' rel='noreferrer' title={'links'} href={BLOG.CONTACT_LINKS} >
+        <i className='fas fa-link transform hover:scale-125 duration-150 hover:text-green-600'/>
+      </a>}
       {BLOG.CONTACT_TELEGRAM && <a target='_blank' rel='noreferrer' href={BLOG.CONTACT_TELEGRAM} title={'telegram'} >
         <i className='fab fa-telegram transform hover:scale-125 duration-150 hover:text-green-600'/>
       </a>}
