@@ -42,6 +42,10 @@ export const LayoutSlug = props => {
             {!lock && <div id='container'>
 
                 {/* title */}
+                {CONFIG_MEDIUM.POST_LIST_COVER && <div className='w-full max-h-96 object-cover overflow-hidden mb-2'>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={post.pageCoverThumbnail} className='w-full max-h-96 object-cover hover:scale-125 duration-150' />
+                        </div>}
                 <h1 className="text-3xl pt-12  dark:text-gray-300">{post?.title}</h1>
 
                 {/* meta */}
