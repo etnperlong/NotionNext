@@ -41,7 +41,7 @@ const SocialButton = () => {
           rel='noreferrer'
           title={'links'}
           href={siteConfig('CONTACT_LINKS')}>
-          <i className='fab fa-link transform hover:scale-125 duration-150 hover:text-green-600' />
+          <i className='fas fa-user transform hover:scale-125 duration-150 hover:text-green-600' />
         </a>
       )}
       {siteConfig('CONTACT_TELEGRAM') && (
@@ -51,6 +51,15 @@ const SocialButton = () => {
           href={siteConfig('CONTACT_TELEGRAM')}
           title={'telegram'}>
           <i className='fab fa-telegram transform hover:scale-125 duration-150 hover:text-green-600' />
+        </a>
+      )}
+      {siteConfig('CONTACT_MATRIX') && (
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href={siteConfig('CONTACT_MATRIX')}
+          title={'matrix'}>
+          <i className='far fa-message transform hover:scale-125 duration-150 hover:text-green-600' />
         </a>
       )}
       {siteConfig('CONTACT_LINKEDIN') && (
